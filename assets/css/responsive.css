@@ -236,8 +236,12 @@
 
                     /* Redefinindo p da página principal */
                     
-                        .button-animation-divi p, .div-section-principal span {
-                            font-size: 0.7rem;
+                        .button-animation-divi p {
+                            font-size: .7rem;
+                        }
+                        
+                        .div-section-principal span {
+                            font-size: 1rem;
                         }
 
                     /* Fim parágrafo */
@@ -330,8 +334,12 @@
 
                 /* Redefinindo p da página principal */
                     
-                    .button-animation-divi p, .div-section-principal span {
-                        font-size: 0.6rem;
+                    .button-animation-divi p {
+                        font-size: .6rem;
+                    }
+                     
+                    .div-section-principal span {
+                        font-size: .8rem;
                     }
 
                 /* Fim parágrafo */
@@ -431,8 +439,12 @@
 
                 /* Redefinindo p da página principal */
                     
-                    .button-animation-divi p, .div-section-principal span {
-                        font-size: 0.5rem;
+                    .button-animation-divi p {
+                        font-size: .5rem;
+                    }
+                    
+                    .div-section-principal span {
+                        font-size: 0.6rem;
                     }
 
                 /* Fim parágrafo */

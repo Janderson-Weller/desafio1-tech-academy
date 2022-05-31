@@ -36,7 +36,7 @@
         @keyframes cards {
 
             from {
-                backdrop-filter: blur(.5rem); /* Efeito de vidro */
+                backdrop-filter: blur(.5rem); 
                 border-radius: .2rem;
                 box-shadow:0 0 0.2rem 0.5rem #00bfff;
             }

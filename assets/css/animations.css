@@ -17,7 +17,7 @@
 
                 .div-section-principal .typeWriter {
                     max-width: 100%;
-                    animation: whiter 4s steps(25), cursor .4s infinite alternate;
+                    animation: whiter 2s steps(25) infinite alternate, cursor .4s infinite alternate;
                     white-space: nowrap;
                     overflow: hidden;
                     padding-right: .2rem;
@@ -55,15 +55,6 @@
 
         /* Animação título da sessão dos cards */
 
-            /* Definindo animação do título */
-    
-                .div-texto-h1 {
-                    animation: cards 1s infinite alternate;
-                }
-
-            /* Fim */
-
-
             /* Início da animação */
 
                 @keyframes cards {
@@ -71,7 +62,7 @@
                     from {
                         backdrop-filter: blur(.5rem); /* Efeito de vidro */
                         border-radius: .2rem;
-                        margin-top: .2rem; /* Efeito onda */
+                        /* margin-top: .2rem; Efeito onda */
                         box-shadow:0 0 0.2rem 0.5rem #00bfff;
                     }
                     
@@ -135,19 +126,42 @@
     
 /* Fim animação texto span */
 
-/* Animação Footer */
+/* Animação Footer card */
 
-    /* .footer-principal {
-        animation: animation-footer 10s infinite alternate;
+    .cards-footer a {
+        /* animation: cards 1s infinite alternate; */
+        animation: pisca-img-footer-card 1s infinite alternate;
     }
 
-    @keyframes animation-footer {
+    @keyframes pisca-img-footer-card {
         
         from {
-            box-shadow:0 0 1rem 0.5rem #00bfff;
+            backdrop-filter: blur(.5rem); /* Efeito de vidro */
+            border: #00bfff;
+            border-radius: 1rem;
+            box-shadow:0 0 2px 2px #00bfff;
         }
         
-    } */
+    }
+
+/* Fim */
+
+/* Animação coração */
+
+    .coracao {
+        animation: coracao 1s infinite alternate;
+    }
+
+    @keyframes coracao {
+        
+        from {
+            background-color: #00bfff;
+            /* border-radius: .1rem;
+            margin-top: .2rem; */
+            box-shadow:0 0 0.2rem 0.5rem #00bfff;
+        }
+        
+    }
 
 /* Fim */
 
