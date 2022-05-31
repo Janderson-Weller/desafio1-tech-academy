@@ -9,17 +9,18 @@
 
 /* Definindo o tamanho mínimo da tela para a animação ocorrer */
 
-    @media (min-width: 300px) {
+    @media (min-width: 250px) {
 
         /* Efeito máquina de escrever */
             
             /* Estilização do h1 */
 
                 .div-section-principal .typeWriter {
-                    width: 100%;
+                    max-width: 100%;
                     animation: whiter 4s steps(25), cursor .4s infinite alternate;
                     white-space: nowrap;
                     overflow: hidden;
+                    padding-right: .2rem;
                     border-right: 2px solid;
                 }
 
@@ -30,7 +31,7 @@
             
                 @keyframes whiter {
                     from {
-                        width: 0;
+                        max-width: 0;
                     }
                 }
 
@@ -70,8 +71,7 @@
                     from {
                         backdrop-filter: blur(.5rem); /* Efeito de vidro */
                         border-radius: .2rem;
-                        margin-top: 1rem;
-                        /* padding: .5rem; */
+                        margin-top: .2rem; /* Efeito onda */
                         box-shadow:0 0 0.2rem 0.5rem #00bfff;
                     }
                     

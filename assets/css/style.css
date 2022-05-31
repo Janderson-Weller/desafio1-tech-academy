@@ -198,14 +198,9 @@
                     justify-content: center;
                     align-items: center;
                     overflow: hidden;
-                    margin-top: 3rem;
+                    margin-top: 1rem;
                     animation: show-text 5s;
                 }
-
-                .div-section-principal {
-                    width: 80%;
-                }
-                
 
                 /* Destacando o texto desenvolvedores */
             
