@@ -7,12 +7,18 @@
 *    entendimento, a maioria das sessões estão comentadas.
 */
 
+
 /* Definindo os tamanhos de telas */
 
     /* Tela 1250x1066 */
 
-        @media (max-width: 1250px) {
+        @media (max-width: 1350px) {
+
+            .section-portfolio, .section-bootcamp {
+                height: auto;
+            }
             
+
             /* Dando margem após a quebra */
             
                 .cards-list {
@@ -34,31 +40,27 @@
     /* Fim tela 1250x1066 */
 
 
-    /* Tela 850x1060 */
+    /* Tela 1000x1060 */
 
-        @media (max-width: 850px) {
+        @media (max-width: 1000px) {
 
-            .div-texto-h1 {
+            .div-section-principal h1 {
+                /* font-size: 2rem; */
+                flex-wrap: wrap;
+            }
+
+            .div-section-principal p {
                 font-size: 1rem;
             }
 
-            p {
-                font-size: .6rem;
-            }
-
-            .div-section-principal p{
-                font-size: 1rem;
+            .div-texto-h1 h1 {
+                font-size: 2rem;
             }
 
             /* Redefinindo os cards */
 
-                .cards-list {
-                    height: 16rem;
-                    width: 12rem;
-                }
-
                 .cards-header {
-                    font-size: .7rem;
+                    font-size: .8rem;
                 }
 
             /*  Fim cards */
@@ -109,9 +111,9 @@
     /* Fim Tela 850px */
 
 
-    /* Tela até 750px */
+    /* Tela até 800px */
 
-        @media (max-width: 750px) {
+        @media (max-width: 800px) {
 
             /* Monstrando o menu oculto */
 
@@ -166,9 +168,13 @@
                 .div-section-principal h1 {
                     font-size: 1.7rem;
                 }
+
+                .div-section-principal p {
+                    font-size: 0.8rem;
+                }
             
                 .div-texto-h1 h1 {
-                    font-size: 1.2rem;
+                    font-size: 1.4rem;
                 }
 
             /* Fim */
@@ -177,8 +183,8 @@
             /* Redefinindo os cards */
 
                 .cards-list {
-                    height: 18rem;
-                    width: 13rem;
+                    /* height: 23rem; */
+                    width: 18rem;
                 }
 
 
@@ -191,12 +197,16 @@
             /* Fim */
         }
 
-    /* Fim tela 750 */
+    /* Fim tela 800 */
 
 
-    /* Tela de até 550px */
+    /* Tela de até 650px */
 
-        @media (max-width: 550px) {
+        @media (max-width: 650px) {
+
+            .div-section-principal {
+                min-height: auto;
+            }
 
             /* Formatação dos textos */
 
@@ -205,16 +215,7 @@
                     /* Texto cabeçalho h1  */
 
                         .div-section-principal h1 {
-                            font-size: 1.5rem;
-                        }
-
-                    /* Fim */
-                
-
-                    /* Texto parágrafo Section Principal */
-
-                        .section-principal p {
-                            font-size: .7rem;
+                            font-size: 1.7rem;
                         }
 
                     /* Fim */
@@ -225,7 +226,7 @@
                 /* Texto h1 das demanis sections */
 
                     .div-texto-h1 h1 {
-                        font-size: 1rem;
+                        font-size: 1.5rem;
                     }
                 
                 /* Fim */
@@ -239,8 +240,8 @@
 
                     .cards-list {
                         /* justify-content: space-evenly; */
-                        height: 16rem;
-                        width: 11rem;
+                        height: 21rem;
+                        width: 16rem;
                     }
 
                 /* Fim */
@@ -249,8 +250,13 @@
                 /* Alterando tamanho cabeçalho dos cards */
 
                     .cards-list h2 {
+                        font-size: .9rem;
+                    }
+
+                    .cards-list p {
                         font-size: .8rem;
                     }
+
 
                 /* Fim */
 
@@ -269,14 +275,10 @@
 
 
                 /* Redefinindo o tamanho do card geral que contém a social media */
-
-                    .social-media {
-                        height: 8rem;
-                    }
                     
                     .social-media-list li {
-                        height: 1.5rem;
-                        width: 6rem;
+                        height: 1.8rem;
+                        width: 7rem;
                     }
 
                     .social-media li img {
@@ -287,7 +289,7 @@
                         transform: translate(.9rem, -.9rem);
                     }
 
-                    p, .social-media span {
+                    .social-media span {
                         font-size: .6rem;
                     }
 
@@ -297,24 +299,21 @@
     
         }
 
-    /* Fim tela 550px */
+    /* Fim tela 650px */
 
-    /* Tela 450px */ 
+    /* Tela 550px */ 
 
-        @media (max-width: 450px) {
+        @media (max-width: 550px) {
 
             /* Formatação dos textos */
 
                 .div-section-principal h1 {
                     font-size:1rem;
-                }
-
-                .div-section-principal p {
-                    font-size: .5rem;
+                    flex-wrap: wrap;
                 }
             
                 .div-texto-h1 h1, .div-section-principal span {
-                    font-size: .7rem;
+                    font-size: 1rem;
                 }
 
             /* Fim formatação dos textos */
@@ -323,9 +322,8 @@
             /* Section portfolio, redefinindo o tamanhos dos cards */
 
                 .cards-list {
-                    justify-content: space-between;
-                    height: 15rem;
-                    width: 10rem;
+                    height: 18rem;
+                    width: 14rem;
                 }
 
                 .cards-list h2 {
@@ -354,7 +352,7 @@
                     height: 1rem;
                 }
 
-                p, .social-media span, .footer-principal {
+                .social-media span, .footer-principal {
                     font-size: .5rem;
                 }
 
@@ -365,12 +363,20 @@
             /* Fim  card social media */
         }
 
-    /* Fim tela 450px */
+    /* Fim tela 550px */
 
 
     /* Tela 350px */ 
 
-        @media (max-width: 350px) {
+        @media (max-width: 380px) {
+
+            /* button-animation-divi  */
+
+                .button-animation-divi {
+                    margin-top: 1rem;
+                }
+
+            /* Fim */
 
             /* Redefinindo o tamano dos links do menu principal */
 
@@ -391,8 +397,7 @@
                     }
                 
                     .div-texto-h1 h1 {
-                        font-size: .6rem;
-                        flex-wrap: wrap;
+                        font-size: .8rem;
                     }
 
                 /* Fim h1 */
@@ -401,7 +406,7 @@
                 /* Redefinindo p da página principal */
                     
                     .button-animation-divi p {
-                        font-size: 0.45rem;
+                        font-size: 0.6rem;
                     }
 
                 /* Fim parágrafo */
@@ -437,7 +442,7 @@
                     height: .8rem;
                 }
 
-                p, .social-media span, .footer-principal {
+                .social-media span, .footer-principal {
                     font-size: .4rem;
                 }
 

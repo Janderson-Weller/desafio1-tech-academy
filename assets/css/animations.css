@@ -15,7 +15,7 @@
             
             /* Estilização do h1 */
 
-                .typeWriter {
+                .div-section-principal .typeWriter {
                     width: 100%;
                     animation: whiter 4s steps(25), cursor .4s infinite alternate;
                     white-space: nowrap;

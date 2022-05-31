@@ -30,17 +30,14 @@
     /* Estilizado o h1 */
 
         h1 {
-            font-size: 2rem;
-            /* font-family: 'Indie Flower', cursive; */
+            font-size: 3rem;
             text-shadow: #FFFFFF 0 0.2rem 0.8rem;
             text-transform: uppercase; /* Deixando o texto em maiúculo*/
-            text-align: center;
-            flex-wrap: wrap;
             text-align: center;
         }
 
     /* Fim h1 */
-
+    
 
     /*  Estilização geral da página*/
 
@@ -73,6 +70,7 @@
             box-shadow: 0px 5px 2px 0px rgba(0, 0, 0, 0.2);
             width: 100vw;
             backdrop-filter: blur(1rem);
+            /* -webkit-backdrop-filter: blur(1rem); */
             /* background-color: #961be7; */
             z-index: 1;
         }
@@ -142,9 +140,8 @@
             display: flex;
             align-items: center; /* Alinhamento vertical dos itens da section */
             justify-content: center; /* Alinhamento horizontal dos itens da section */
-            height: 100vh; /* Fazendo a sessão ocupar toda a tela do dispositivo*/
+            height: 100vh; /*Fazendo a sessão ocupar toda a tela do dispositivo*/
             flex-direction: column;
-            /* margin-top: 3rem; */
         }
 
     /* Fim */
@@ -174,9 +171,19 @@
                 align-items: center;
                 justify-content: space-evenly;
                 flex-direction: column;
-                margin-top: 3rem;
-                height: 100vh;
             }
+            
+            
+            /* Parágrafo div principal */
+
+                .button-animation-divi p {
+                    text-align: left;
+                    font-size: 1rem;
+                    margin: 0 1rem;
+                    white-space: normal;
+                }
+
+            /* Fim */
 
         /* Fim elemento da section principal */
 
@@ -191,8 +198,14 @@
                     justify-content: center;
                     align-items: center;
                     overflow: hidden;
+                    margin-top: 3rem;
                     animation: show-text 5s;
                 }
+
+                .div-section-principal {
+                    width: 80%;
+                }
+                
 
                 /* Destacando o texto desenvolvedores */
             
@@ -206,7 +219,6 @@
 
                     .dev-code {
                         background-color: #bb67f3;
-                        position: sticky;
                     }
 
                 /* Fim Let's Code */
@@ -215,8 +227,16 @@
 
     /* Fim section principal */
 
+    
+    /* Colocando margin nos textos de cada categoria */
+        
+        .div-texto-h1 {
+            margin-top: 3rem;
+        }
 
-
+    /*  */
+    
+    
     /* Estilizando as demais sections da página, exceto o footer */
 
         .section-portfolio, .section-bootcamp, .section-contato {
