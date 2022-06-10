@@ -15,9 +15,9 @@
             
             /* Estilização do h1 */
 
-                .div-section-principal .typeWriter {
+                .container-perfil .typeWriter {
                     max-width: 100%;
-                    animation: whiter 2s steps(25) infinite alternate, cursor .4s infinite alternate;
+                    animation: whiter 6s steps(25) infinite alternate, cursor .4s infinite alternate;
                     white-space: nowrap;
                     overflow: hidden;
                     padding-right: .2rem;
@@ -76,7 +76,7 @@
 /* Fim animação media query */  
 
 
-/* Animação do texto contido no parágrafo Principal da tela inicial */
+/* Animação do perfil contido na Section Principal da tela inicial */
 
     /* Início animação */
 
@@ -85,7 +85,7 @@
             0% {
                 animation-delay: 5s;
                 opacity: 0;
-                transform: translate3D(-100%, 0px, 0px);
+                transform: translate3D(0, 0px, -100%);
             }
 
             100% {

@@ -14,8 +14,13 @@
 
         @media (max-width: 1350px) {
 
-            .section-portfolio, .section-bootcamp {
+            .section-portfolio, .section-bootcamp, .section-principal, .section-page-info {
                 height: auto;
+            }
+
+
+            .section-page-info {
+                margin-top: -3%;
             }
             
 
@@ -44,18 +49,14 @@
 
         @media (max-width: 1000px) {
 
-            .div-section-principal h1 {
-                font-size: 2.5rem;
-                flex-wrap: wrap;
+            .container-perfil .perfil {
+                transform: translateY(50%);
             }
 
-            .div-section-principal p {
-                font-size: 1.5rem;
+            .container-perfil h1, .div-texto-h1 h1 {
+                font-size: 1.8rem;
             }
 
-            .div-texto-h1 h1 {
-                font-size: 2rem;
-            }
 
             /* Redefinindo os cards */
 
@@ -108,12 +109,12 @@
             
         }
     
-    /* Fim Tela 850px */
+    /* Fim Tela 1000px */
 
 
-    /* Tela até 800px */
+    /* Tela até 870px */
 
-        @media (max-width: 800px) {
+        @media (max-width: 870px) {
 
             /* Monstrando o menu oculto */
 
@@ -163,23 +164,6 @@
             /* Fim exibição menu */
 
 
-            /* Formatação do textos */
-
-                .div-section-principal h1 {
-                    font-size: 1.7rem;
-                }
-
-                .div-section-principal p {
-                    font-size: 0.8rem;
-                }
-            
-                .div-texto-h1 h1 {
-                    font-size: 1.4rem;
-                }
-
-            /* Fim */
-
-
             /* Redefinindo os cards */
 
                 .cards-list {
@@ -197,7 +181,7 @@
             /* Fim */
         }
 
-    /* Fim tela 800 */
+    /* Fim tela 870 */
 
 
     /* Tela de até 650px */
@@ -215,20 +199,17 @@
                 height: 1.5rem;
             }
 
-            /* Fim */
 
-            .div-section-principal {
-                min-height: auto;
-            }
+            /* Fim */
 
             /* Formatação dos textos */
 
                 /* Texto section principal */
 
                     /* Texto cabeçalho h1  */
-
-                        .div-section-principal h1 {
-                            font-size: 1.7rem;
+        
+                        .container-perfil h1, .div-texto-h1 h1  {
+                            font-size: 1.5rem;
                         }
 
                     /* Fim */
@@ -248,14 +229,6 @@
                         
                 /* Fim texto section principal */
 
-
-                /* Texto h1 das demanis sections */
-
-                    .div-texto-h1 h1 {
-                        font-size: 1.5rem;
-                    }
-                
-                /* Fim */
                     
             /* Fim formatação de textos */
 
@@ -321,31 +294,13 @@
 
     /* Fim tela 650px */
 
-    /* Tela 550px */ 
+    /* Tela 580px */ 
 
-        @media (max-width: 550px) {
+        @media (max-width: 580px) {
 
-            /* Formatação dos textos */
-
-                .div-section-principal h1, .div-texto-h1 h1, .div-section-principal span {
-                    font-size: 1rem;
-                    flex-wrap: wrap;
-                }
-
-                /* Redefinindo p da página principal */
-                    
-                    .button-animation-divi p {
-                        font-size: .6rem;
-                    }
-                     
-                    .div-section-principal span {
-                        font-size: .8rem;
-                    }
-
-                /* Fim parágrafo */
-
-            /* Fim formatação dos textos */
-
+            .div-texto-h1 h1 {
+                font-size: 1rem;
+            }
 
             /* Section portfolio, redefinindo o tamanhos dos cards */
 
@@ -390,17 +345,26 @@
             /* Fim  card social media */
         }
 
-    /* Fim tela 550px */
+    /* Fim tela 580px */
 
 
     /* Tela 450px */ 
 
         @media (max-width: 450px) {
+
+            /* Estilização section principal */
+
+                .container-perfil .perfil {
+                    height: 8rem;
+                    width: 8rem;
+                }
+
+        /* Fim */
             
             /* Redefinindo o h1 */
 
-                .div-section-principal h1, .div-texto-h1 h1 {
-                    font-size: .8rem;
+                .container-perfil .typeWriter, .div-texto-h1 h1 {
+                    font-size: 1rem;
                     /* flex-wrap: wrap; */
                 }
 
@@ -428,7 +392,7 @@
 
                 /* Redefinindo o h1 */
 
-                    .div-section-principal h1, .div-texto-h1 h1 {
+                .container-perfil .typeWriter, .div-texto-h1 h1 {
                         font-size: .7rem;
                         /* flex-wrap: wrap; */
                     }

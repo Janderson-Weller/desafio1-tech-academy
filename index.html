@@ -14,7 +14,7 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/animation-responsive.css">
 
 </head>
-<body id="home">
+<body>
     <header class="header-principal">
         <div class="div-logo">
             <a href="#home"><img src="./assets/img/dev_sem_fundo-1.png" alt="Logo Desenvolvedor"></a>
@@ -24,6 +24,7 @@
                 <span class="menu-oculto">Menu</span>
                 <ul class="ul-mostrar">
                     <li><a href="#home">Home</a></li>
+                    <li><a href="#sobre">Sobre Mim</a></li>
                     <li><a href="#portfolio">Portfólio</a></li>
                     <li><a href="#bootcamps">Bootcamps</a></li>
                     <li><a href="#contato">Contato</a></li>
@@ -33,25 +34,54 @@
         </div>
     </header>
     <main>
-        <section class="section-principal section-page">
-            <div class="div-section-principal">
+        <section class="section-principal section-page" id="home"> <!-- section-page"--> 
+            <div class="container-perfil">
                 <h1 class="typeWriter">Bem vindo ao meu Portfólio</h1>
-                <div class="button-animation-divi" id="animation-button">
-                    <p>Olá, tudo bem? Meu nome é <strong>Janderson Weller, </strong>
-                        sou estudante de Engenharia da Computação. Tenho interesse pela área de desenvolvimento 
-                        front-end e back-end. Atualmente domino as stacks JavaScript, Python e C - programação 
-                        para IoT.Também tenho sólidos conhecimentos de back-end com os frameworks Node.js com  
-                        express e Django para aplicações web.
-                    </p>
-                    <p> As linguagens que domino eu aprendi vasculhando a 
-                        internet :D, principalmente a documentação  oficial. Faço parte de comunidades no discord 
-                        e fóruns - CodeWar, Free Code Camp, Dio etc-, onde trocamos conhecimentos sobre o mundo do 
-                        JavaScript e Python. Também faço parte da <strong>Tech Academy - Turma 1/2022, primeira turma 
-                        formanda pela Startse focada em formar <span class="dev">desenvolvedores!</span></strong>
-                    </p>
-                    <span class="dev-code"><strong>Let's Code!</strong></span>
-                    <!-- <button class="animation" id="divi"> esconde texto </button> -->
-                </div>
+                <img class="perfil" src="./assets/img/avatar1.png" alt="">
+            </div>
+        </section>
+
+        <section class="section-page-info section-page" id="sobre">
+            <div class="div-list-card">
+                <article class="cards-list green">
+                    <div class="cards-list-align">
+                        <header class="cards-header">
+                            <h2>Breve Apresentação</h2>
+                        </header>
+                        <div class="cards-text">
+                            <p>
+                                Olá, tudo bem? Meu nome é <strong>Janderson Weller</strong>, moro em Manaus-AM 
+                                e sou apaixonado por tecnologia e games.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+                <article class="cards-list red">
+                    <div class="cards-list-align">
+                        <header class="cards-header">
+                            <h2>Formação</h2>
+                        </header>
+                        <div class="cards-text">
+                            <p>
+                                Sou graduando em Engenharia de Computação pelo Instituto de Ensino Superior Fucapi
+                            </p>
+                        </div>
+                    </div>
+                </article>
+                <article class="cards-list blue">
+                    <div class="cards-list-align">
+                        <header class="cards-header">
+                            <h2>Linguagens</h2>
+                        </header>
+                        <div class="cards-text">
+                            <p>
+                                Atualmente domino as stacks JavaScript, Python e C. Sólidos conhecimentos de 
+                                back-end com os frameworks Node.js e express e Django para aplicações web, além 
+                                de MySql.
+                            </p>
+                        </div>
+                    </div>
+                </article>
             </div>
         </section>
         
